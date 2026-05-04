@@ -35,12 +35,20 @@
     }
 
     @media (min-width: 768px) {
-        &__grid:hover &__card {
-            width: calc(35% - 8px);
+        &__card:nth-child(odd):hover {
+            width: calc(65% - 8px); 
+            
+            & + .itv-interactive-cards__card {
+                width: calc(35% - 8px);
+            }
         }
 
-        &__grid &__card:hover {
-            width: calc(65% - 8px);
+        &__card:nth-child(even):hover {
+            width: calc(65% - 8px); 
+        }
+        
+        &__card:has(+ .itv-interactive-cards__card:nth-child(even):hover) {
+            width: calc(35% - 8px);
         }
     }
 
