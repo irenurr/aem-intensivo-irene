@@ -3,7 +3,8 @@
 <div class="itv-timeline">
     <div class="itv-timeline__line"></div>
     <sly data-sly-list.event="${model.events}">
-        <div class="itv-timeline__item ${eventList.odd ? 'itv-timeline__item--left' : 'itv-timeline__item--right'}">
+        <div class="itv-timeline__item ${eventList.odd ? 'itv-timeline__item--left' : 'itv-timeline__item--right'}
+            ${(properties.enableAnimation == 'true' || properties.enableAnimation)? 'itv-timeline__item--reveal' : ''}">
             <div class="itv-timeline__event-marker"></div>
             <div class="itv-timeline__event-content">
                 <p class="itv-timeline__event-date">${event.date}</p>

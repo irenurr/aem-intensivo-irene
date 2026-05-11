@@ -92,7 +92,7 @@
                                             <fgImage
                                                 jcr:primaryType="nt:unstructured"
                                                 sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
-                                                fieldLabel="Imagen del Coche"
+                                                fieldLabel="Imagen 1er plano"
                                                 name="./fgImage"
                                                 rootPath="/content/dam/itv/buycar/images"/>
                                         </items>
@@ -107,7 +107,7 @@
                                             <fgVideo
                                                 jcr:primaryType="nt:unstructured"
                                                 sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
-                                                fieldLabel="Vídeo del Coche"
+                                                fieldLabel="Vídeo 1er plano"
                                                 name="./fgVideo"
                                                 rootPath="/content/dam/itv/buycar/videos"/>
                                         </items>
@@ -122,7 +122,7 @@
                                             <model3d
                                                 jcr:primaryType="nt:unstructured"
                                                 sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
-                                                fieldLabel="Modelo 3D del Coche (.glb / .gltf)"
+                                                fieldLabel="Modelo 3D del Coche"
                                                 name="./model3d"
                                                 rootPath="/content/dam/itv/buycar/3d-models"/>
                                         </items>

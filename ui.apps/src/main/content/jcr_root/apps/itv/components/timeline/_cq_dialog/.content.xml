@@ -16,6 +16,13 @@
                         jcr:title="Configuración"
                         sling:resourceType="granite/ui/components/coral/foundation/container">
                         <items jcr:primaryType="nt:unstructured">
+                            <enableAnimation
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                name="./enableAnimation"
+                                text="Activar animación (Scroll Reveal)"
+                                uncheckedValue="false"
+                                value="true"/>
                             <event
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
