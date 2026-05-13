@@ -22,111 +22,227 @@
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="granite/ui/components/coral/foundation/container">
                                 <items jcr:primaryType="nt:unstructured">
-                                    <bgMedia
+                                    <layerType
                                         granite:class="cq-dialog-dropdown-showhide"
                                         jcr:primaryType="nt:unstructured"
                                         sling:resourceType="granite/ui/components/coral/foundation/form/select"
-                                        fieldLabel="Tipo de Fondo"
-                                        name="./bgMedia">
+                                        fieldLabel="Modo de Composición"
+                                        name="./layerType">
                                         <granite:data
                                             jcr:primaryType="nt:unstructured"
-                                            cq-dialog-dropdown-showhide-target=".hero-bg-target"/>
+                                            cq-dialog-dropdown-showhide-target=".hero-layer-target"/>
                                         <items jcr:primaryType="nt:unstructured">
-                                            <image jcr:primaryType="nt:unstructured" text="Imagen" value="image"/>
-                                            <video jcr:primaryType="nt:unstructured" text="Vídeo" value="video"/>
+                                            <single
+                                                jcr:primaryType="nt:unstructured"
+                                                text="1 Capa (Un solo elemento de media)"
+                                                value="single"/>
+                                            <double
+                                                jcr:primaryType="nt:unstructured"
+                                                text="2 Capas (Compuesto para profundidad - combinable)"
+                                                value="double"/>
                                         </items>
-                                    </bgMedia>
+                                    </layerType>
 
-                                    <bgImageContainer
-                                        granite:class="hide hero-bg-target"
+                                    <singleLayerContainer
+                                        granite:class="hide hero-layer-target"
                                         jcr:primaryType="nt:unstructured"
                                         sling:resourceType="granite/ui/components/coral/foundation/container">
-                                        <granite:data jcr:primaryType="nt:unstructured" showhidetargetvalue="image"/>
+                                        <granite:data jcr:primaryType="nt:unstructured" 
+                                            showhidetargetvalue="single"/>
                                         <items jcr:primaryType="nt:unstructured">
-                                            <bgImage
-                                                jcr:primaryType="nt:unstructured"
-                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
-                                                fieldLabel="Imagen de Fondo"
-                                                name="./bgImage"
-                                                rootPath="/content/dam/itv/buycar/images"/>
-                                        </items>
-                                    </bgImageContainer>
+                                            <well jcr:primaryType="nt:unstructured" 
+                                                sling:resourceType="granite/ui/components/coral/foundation/well">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <singleMediaType
+                                                        granite:class="cq-dialog-dropdown-showhide"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                        fieldLabel="Tipo de Media"
+                                                        name="./singleMediaType">
+                                                        <granite:data jcr:primaryType="nt:unstructured" 
+                                                            cq-dialog-dropdown-showhide-target=".hero-single-media-target"/>
+                                                        <items jcr:primaryType="nt:unstructured">
+                                                            <image 
+                                                                jcr:primaryType="nt:unstructured" 
+                                                                text="Imagen" 
+                                                                value="image"/>
+                                                            <video 
+                                                                jcr:primaryType="nt:unstructured" 
+                                                                text="Vídeo" 
+                                                                value="video"/>
+                                                            <model3d 
+                                                                jcr:primaryType="nt:unstructured" 
+                                                                text="Modelo 3D" 
+                                                                value="3d"/>
+                                                        </items>
+                                                    </singleMediaType>
 
-                                    <bgVideoContainer
-                                        granite:class="hide hero-bg-target"
+                                                    <singleImageContainer 
+                                                        granite:class="hide hero-single-media-target" 
+                                                        jcr:primaryType="nt:unstructured" 
+                                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                        <granite:data 
+                                                        jcr:primaryType="nt:unstructured" 
+                                                        showhidetargetvalue="image"/>
+                                                        <items jcr:primaryType="nt:unstructured">
+                                                            <singleImage
+                                                                jcr:primaryType="nt:unstructured" 
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield" 
+                                                                fieldLabel="Ruta Imagen" name="./singleImage" 
+                                                                rootPath="/content/dam/itv/buycar/images"/>
+                                                        </items>
+                                                    </singleImageContainer>
+
+                                                    <singleVideoContainer 
+                                                        granite:class="hide hero-single-media-target" 
+                                                        jcr:primaryType="nt:unstructured" 
+                                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                        <granite:data 
+                                                        jcr:primaryType="nt:unstructured" 
+                                                        showhidetargetvalue="video"/>
+                                                        <items jcr:primaryType="nt:unstructured">
+                                                            <singleVideo
+                                                                jcr:primaryType="nt:unstructured" 
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield" 
+                                                                fieldLabel="Ruta Video" name="./singleVideo" 
+                                                                rootPath="/content/dam/itv/buycar/videos"/>
+                                                        </items>
+                                                    </singleVideoContainer>
+                                                    <single3dContainer 
+                                                        granite:class="hide hero-single-media-target" 
+                                                        jcr:primaryType="nt:unstructured" 
+                                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                        <granite:data 
+                                                        jcr:primaryType="nt:unstructured" 
+                                                        showhidetargetvalue="3d"/>
+                                                        <items jcr:primaryType="nt:unstructured">
+                                                            <single3d
+                                                                jcr:primaryType="nt:unstructured" 
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield" 
+                                                                fieldLabel="Ruta Modelo 3D" name="./single3d" 
+                                                                rootPath="/content/dam/itv/buycar/3d-models"/>
+                                                        </items>
+                                                    </single3dContainer>
+                                                </items>
+                                            </well>
+                                        </items>
+                                    </singleLayerContainer>
+
+                                    <doubleLayerContainer
+                                        granite:class="hide hero-layer-target"
                                         jcr:primaryType="nt:unstructured"
                                         sling:resourceType="granite/ui/components/coral/foundation/container">
-                                        <granite:data jcr:primaryType="nt:unstructured" showhidetargetvalue="video"/>
+                                        <granite:data jcr:primaryType="nt:unstructured" showhidetargetvalue="double"/>
                                         <items jcr:primaryType="nt:unstructured">
-                                            <bgVideo
-                                                jcr:primaryType="nt:unstructured"
-                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
-                                                fieldLabel="Vídeo de Fondo"
-                                                name="./bgVideo"
-                                                rootPath="/content/dam/itv/buycar/videos"/>
-                                        </items>
-                                    </bgVideoContainer>
+                                            <well jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/well">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <bgMedia
+                                                        granite:class="cq-dialog-dropdown-showhide"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                        fieldLabel="Tipo de Fondo"
+                                                        name="./bgMedia">
+                                                        <granite:data
+                                                            jcr:primaryType="nt:unstructured"
+                                                            cq-dialog-dropdown-showhide-target=".hero-bg-target"/>
+                                                        <items jcr:primaryType="nt:unstructured">
+                                                            <bgImage jcr:primaryType="nt:unstructured" text="Imagen" value="bgImage"/>
+                                                            <bgVideo jcr:primaryType="nt:unstructured" text="Vídeo" value="bgVideo"/>
+                                                        </items>
+                                                    </bgMedia>
 
-                                    <fgMedia
-                                        granite:class="cq-dialog-dropdown-showhide"
-                                        jcr:primaryType="nt:unstructured"
-                                        sling:resourceType="granite/ui/components/coral/foundation/form/select"
-                                        fieldLabel="Tipo de Media en Primer Plano"
-                                        name="./fgMedia">
-                                        <granite:data
-                                            jcr:primaryType="nt:unstructured"
-                                            cq-dialog-dropdown-showhide-target=".hero-fg-target"/>
-                                        <items jcr:primaryType="nt:unstructured">
-                                            <image jcr:primaryType="nt:unstructured" text="Imagen" value="image"/>
-                                            <video jcr:primaryType="nt:unstructured" text="Vídeo" value="video"/>
-                                            <model3d jcr:primaryType="nt:unstructured" text="Modelo 3D" value="3d"/>
+                                                    <bgImageContainer
+                                                        granite:class="hide hero-bg-target"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                        <granite:data jcr:primaryType="nt:unstructured" showhidetargetvalue="bgImage"/>
+                                                        <items jcr:primaryType="nt:unstructured">
+                                                            <bgImage
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                                fieldLabel="Imagen de Fondo"
+                                                                name="./bgImage"
+                                                                rootPath="/content/dam/itv/buycar/images"/>
+                                                        </items>
+                                                    </bgImageContainer>
+                                                    <bgVideoContainer
+                                                        granite:class="hide hero-bg-target"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                        <granite:data jcr:primaryType="nt:unstructured" showhidetargetvalue="bgVideo"/>
+                                                        <items jcr:primaryType="nt:unstructured">
+                                                            <bgVideo
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                                fieldLabel="Vídeo de Fondo"
+                                                                name="./bgVideo"
+                                                                rootPath="/content/dam/itv/buycar/videos"/>
+                                                        </items>
+                                                    </bgVideoContainer>
+                                                    <fgMedia
+                                                        granite:class="cq-dialog-dropdown-showhide"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                        fieldLabel="Tipo de Media en Primer Plano"
+                                                        name="./fgMedia">
+                                                        <granite:data
+                                                            jcr:primaryType="nt:unstructured"
+                                                            cq-dialog-dropdown-showhide-target=".hero-fg-target"/>
+                                                        <items jcr:primaryType="nt:unstructured">
+                                                            <fgImage jcr:primaryType="nt:unstructured" text="Imagen" value="fgImage"/>
+                                                            <fgVideo jcr:primaryType="nt:unstructured" text="Vídeo" value="fgVideo"/>
+                                                            <fg3d jcr:primaryType="nt:unstructured" text="Modelo 3D" value="fg3d"/>
+                                                        </items>
+                                                    </fgMedia>
+                                                    <fgImageContainer
+                                                        granite:class="hide hero-fg-target"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                        <granite:data jcr:primaryType="nt:unstructured" showhidetargetvalue="fgImage"/>
+                                                        <items jcr:primaryType="nt:unstructured">
+                                                            <fgImage
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                                fieldLabel="Imagen 1er plano"
+                                                                name="./fgImage"
+                                                                rootPath="/content/dam/itv/buycar/images"/>
+                                                        </items>
+                                                    </fgImageContainer>
+                                                    <fgVideoContainer
+                                                        granite:class="hide hero-fg-target"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                        <granite:data jcr:primaryType="nt:unstructured" showhidetargetvalue="fgVideo"/>
+                                                        <items jcr:primaryType="nt:unstructured">
+                                                            <fgVideo
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                                fieldLabel="Vídeo 1er plano"
+                                                                name="./fgVideo"
+                                                                rootPath="/content/dam/itv/buycar/videos"/>
+                                                        </items>
+                                                    </fgVideoContainer>
+                                                    <fg3dContainer
+                                                        granite:class="hide hero-fg-target"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                        <granite:data jcr:primaryType="nt:unstructured" showhidetargetvalue="fg3d"/>
+                                                        <items jcr:primaryType="nt:unstructured">
+                                                            <fg3d
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                                fieldLabel="Modelo 3D del Coche"
+                                                                name="./fg3d"
+                                                                rootPath="/content/dam/itv/buycar/3d-models"/>
+                                                        </items>
+                                                    </fg3dContainer>
+                                                </items>
+                                            </well>
                                         </items>
-                                    </fgMedia>
+                                    </doubleLayerContainer>
 
-                                    <fgImageContainer
-                                        granite:class="hide hero-fg-target"
-                                        jcr:primaryType="nt:unstructured"
-                                        sling:resourceType="granite/ui/components/coral/foundation/container">
-                                        <granite:data jcr:primaryType="nt:unstructured" showhidetargetvalue="image"/>
-                                        <items jcr:primaryType="nt:unstructured">
-                                            <fgImage
-                                                jcr:primaryType="nt:unstructured"
-                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
-                                                fieldLabel="Imagen 1er plano"
-                                                name="./fgImage"
-                                                rootPath="/content/dam/itv/buycar/images"/>
-                                        </items>
-                                    </fgImageContainer>
 
-                                    <fgVideoContainer
-                                        granite:class="hide hero-fg-target"
-                                        jcr:primaryType="nt:unstructured"
-                                        sling:resourceType="granite/ui/components/coral/foundation/container">
-                                        <granite:data jcr:primaryType="nt:unstructured" showhidetargetvalue="video"/>
-                                        <items jcr:primaryType="nt:unstructured">
-                                            <fgVideo
-                                                jcr:primaryType="nt:unstructured"
-                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
-                                                fieldLabel="Vídeo 1er plano"
-                                                name="./fgVideo"
-                                                rootPath="/content/dam/itv/buycar/videos"/>
-                                        </items>
-                                    </fgVideoContainer>
-
-                                    <fg3dContainer
-                                        granite:class="hide hero-fg-target"
-                                        jcr:primaryType="nt:unstructured"
-                                        sling:resourceType="granite/ui/components/coral/foundation/container">
-                                        <granite:data jcr:primaryType="nt:unstructured" showhidetargetvalue="3d"/>
-                                        <items jcr:primaryType="nt:unstructured">
-                                            <model3d
-                                                jcr:primaryType="nt:unstructured"
-                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
-                                                fieldLabel="Modelo 3D del Coche"
-                                                name="./model3d"
-                                                rootPath="/content/dam/itv/buycar/3d-models"/>
-                                        </items>
-                                    </fg3dContainer>
+                                    
 
                                     <title
                                         jcr:primaryType="nt:unstructured"

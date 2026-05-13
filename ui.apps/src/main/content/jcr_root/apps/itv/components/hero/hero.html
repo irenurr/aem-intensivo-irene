@@ -1,39 +1,55 @@
 <sly data-sly-use.templates="core/wcm/components/commons/v1/templates.html"></sly> 
-<sly data-sly-test.hasContent="${properties.title || properties.bgImage || properties.bgVideo || properties.fgImage || properties.fgVideo || properties.model3d}"></sly>
-<sly data-sly-test="${properties.fgMedia == '3d'}">
+<sly data-sly-test.hasContent="${properties.title || properties.singleImage || properties.singleVideo || properties.single3d || properties.bgImage || properties.bgVideo || properties.fgImage || properties.fgVideo || properties.fg3d}"></sly>
+<sly data-sly-test="${properties.singleMediaType == '3d' || properties.fgMedia == '3d'}">
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.3.0/model-viewer.min.js"></script>
 </sly>
 
-<div class="itv-hero" id="${properties.id}" data-edit-mode="${wcmmode.edit ? 'true' : 'false'}" data-sly-test="${hasContent}">
+<div class="itv-hero" id="${properties.id}" data-edit-mode="${wcmmode.edit ? 'true' : 'false'}" data-sly-test="${hasContent}"
+   data-layers="${properties.layerType || 'double'}">
    
    <div class="itv-hero__bg">
-      <img data-sly-test="${properties.bgMedia == 'image'}" 
-         src="${properties.bgImage}" alt="background" class="cmp-image__image"/>
-         
-      <video data-sly-test="${properties.bgMedia == 'video'}" 
-         class="cmp-image__image js-hero-video" muted loop playsinline>
-         <source src="${properties.bgVideo}" type="video/mp4">
-      </video>
+      <sly data-sly-test="${properties.layerType == 'single'}">
+         <img data-sly-test="${properties.singleMediaType == 'image'}" 
+         src="${properties.singleImage}" alt="Hero Image" class="cmp-image__image"/>
+         <video data-sly-test="${properties.singleMediaType == 'video'}" 
+            class="cmp-image__image js-hero-video" muted loop playsinline>
+            <source src="${properties.singleVideo}" type="video/mp4">
+         </video>
+         <model-viewer data-sly-test="${properties.singleMediaType == '3d'}"
+            src="${properties.single3d}" alt="Modelo 3D" 
+            auto-rotate="${!wcmmode.edit}" rotation-per-second="15deg" interaction-prompt="none"
+            shadow-intensity="1" class="cmp-image__image"
+            camera-controls disable-zoom disable-pan disable-tap>
+         </model-viewer>
+      </sly>
+      <sly data-sly-test="${properties.layerType == 'double' || !properties.layerType}">
+         <img data-sly-test="${properties.bgMedia == 'bgImage'}" 
+            src="${properties.bgImage}" alt="Background Image" class="cmp-image__image"/>       
+         <video data-sly-test="${properties.bgMedia == 'bgVideo'}" 
+            class="cmp-image__image js-hero-video" muted loop playsinline>
+            <source src="${properties.bgVideo}" type="video/mp4">
+         </video>
+      </sly>
    </div>
    
-   <div class="itv-hero__foreground">
-       <img data-sly-test="${properties.fgMedia == 'image'}" 
-         src="${properties.fgImage}" alt="foreground" class="cmp-image__image"/>
+   <div class="itv-hero__foreground" data-sly-test="${properties.layerType == 'double' || !properties.layerType}">
+       <img data-sly-test="${properties.fgMedia == 'fgImage'}" 
+         src="${properties.fgImage}" alt="Foreground Image" class="cmp-image__image"/>
          
-       <video data-sly-test="${properties.fgMedia == 'video'}" 
+       <video data-sly-test="${properties.fgMedia == 'fgVideo'}" 
          class="cmp-image__image js-hero-video" muted loop playsinline>
          <source src="${properties.fgVideo}" type="video/mp4">
       </video>
 
-      <model-viewer data-sly-test="${properties.fgMedia == '3d'}"
-         src="${properties.model3d}" alt="Modelo 3D interactivo" 
+      <model-viewer data-sly-test="${properties.fgMedia == 'fg3d'}"
+         src="${properties.fg3d}" alt="Modelo 3D" 
          auto-rotate="${!wcmmode.edit}" rotation-per-second="15deg" interaction-prompt="none"
          shadow-intensity="1" class="cmp-image__image"
          camera-controls disable-zoom disable-pan disable-tap>
       </model-viewer>
    </div>
    
-   <button data-sly-test="${properties.bgMedia == 'video' || properties.fgMedia == 'video'}"
+   <button data-sly-test="${properties.singleMediaType == 'video' || properties.bgMedia == 'bgVideo' || properties.fgMedia == 'fgVideo'}"
       class="itv-hero__video-btn js-hero-video-toggle" aria-label="Pausar vídeo">
       <span class="js-hero__icon-pause">⏸</span>
       <span class="js-hero__icon-play" style="display:none">▶</span>
