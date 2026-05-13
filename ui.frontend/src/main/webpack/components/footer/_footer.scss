@@ -125,10 +125,10 @@
         }
     }
     &__location::before{
-        background-image: url('/content/dam/itv/logos---icons/icon-location.svg');
+        background-image: url('/content/dam/itv/buycar/logos---icons/icon-location.svg');
     }
     &__contact::before {
-        background-image: url('/content/dam/itv/logos---icons/icon-contact.svg');
+        background-image: url('/content/dam/itv/buycar/logos---icons/icon-contact.svg');
     }
     &__div {
         border: none;
@@ -165,7 +165,7 @@
     }
     &__secondary-links {
         width: 100%;
-        margin-top: 16px; // Separación sutil respecto al menú principal
+        margin-top: 16px;
         
         // INTERFAZ DE AUTOR: Aseguramos que el placeholder de AEM no desborde la caja
         .new {

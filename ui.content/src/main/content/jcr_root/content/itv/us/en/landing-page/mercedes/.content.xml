@@ -2,7 +2,7 @@
 <jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2026-05-03T23:54:53.366+02:00"
+        cq:lastModified="{Date}2026-05-04T12:33:10.810+02:00"
         cq:lastModifiedBy="admin"
         cq:template="/conf/itv/settings/wcm/templates/landing-page"
         jcr:primaryType="cq:PageContent"
@@ -31,70 +31,39 @@
                     sling:resourceType="itv/components/container"
                     id="lp-hero-container"
                     layout="responsiveGrid">
-                    <image
-                        jcr:created="{Date}2026-03-18T09:44:03.332+01:00"
-                        jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2026-03-18T09:44:03.332+01:00"
-                        jcr:lastModifiedBy="admin"
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="itv/components/image"/>
                     <hero
                         jcr:created="{Date}2026-04-22T10:38:35.456+02:00"
                         jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2026-04-27T03:02:08.622+02:00"
+                        jcr:lastModified="{Date}2026-05-04T11:22:29.399+02:00"
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="itv/components/hero"
-                        bgVideo="/content/dam/itv/buycar/videos/YouTube_Rick-Astley-Never-Gonna-Give-You-Up.mp4"
-                        description="awesrzdtufyidgufigñufidyrsteawtQWARTSIYDUOFPGUFDY"
+                        bgMedia="video"
+                        bgVideo="/content/dam/itv/buycar/videos/2026 Mercedes-Benz  Moment of Bliss  Commercial_720p.mp4"
+                        description="Aenean commodo ligula eget dolor.  Aenean massa. "
+                        fgMedia="image"
+                        fgVideo="/content/dam/itv/buycar/videos/2026 Mercedes-Benz  Moment of Bliss  Commercial_720p.mp4"
                         mediaConfig="video"
-                        title="zxczxvxcbxc">
+                        title="Lorem ipsum dolor sit amet, consectetuer adipiscing elit.">
                         <btn-buy
-                            jcr:lastModified="{Date}2026-04-22T10:44:25.795+02:00"
+                            jcr:lastModified="{Date}2026-05-04T02:55:52.179+02:00"
                             jcr:lastModifiedBy="admin"
                             jcr:primaryType="nt:unstructured"
-                            jcr:title="zzz"
+                            jcr:title="Descubre"
+                            sling:resourceType="core/wcm/components/button/v2/button"
+                            linkTarget="_self"/>
+                        <btn-try
+                            jcr:lastModified="{Date}2026-05-04T02:56:02.519+02:00"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Pruebalo"
                             sling:resourceType="core/wcm/components/button/v2/button"
                             linkTarget="_self"/>
                     </hero>
                     <seccionador
                         jcr:created="{Date}2026-05-03T23:17:29.360+02:00"
                         jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2026-05-03T23:17:29.360+02:00"
-                        jcr:lastModifiedBy="admin"
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="itv/components/seccionador"/>
-                    <cardlistinteractiva
-                        jcr:created="{Date}2026-05-03T23:18:14.992+02:00"
-                        jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2026-05-03T23:21:17.992+02:00"
-                        jcr:lastModifiedBy="admin"
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="itv/components/cardlistInteractiva"
-                        mediaType="image">
-                        <cards jcr:primaryType="nt:unstructured">
-                            <item0
-                                jcr:primaryType="nt:unstructured"
-                                imagePath="/content/dam/itv/buycar/images/car-cardlist.png"
-                                title="Mercedes gla"/>
-                            <item1
-                                jcr:primaryType="nt:unstructured"
-                                imagePath="/content/dam/itv/buycar/images/car-cardlist.png"
-                                title="Mercedes gla"/>
-                            <item2
-                                jcr:primaryType="nt:unstructured"
-                                imagePath="/content/dam/itv/buycar/images/car-cardlist.png"
-                                title="Mercedes gla"/>
-                            <item3
-                                jcr:primaryType="nt:unstructured"
-                                imagePath="/content/dam/itv/buycar/images/car-cardlist.png"
-                                title="Mercedes gla"/>
-                        </cards>
-                    </cardlistinteractiva>
-                    <seccionador_1996167282
-                        jcr:created="{Date}2026-05-03T23:51:20.343+02:00"
-                        jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2026-05-03T23:54:53.358+02:00"
+                        jcr:lastModified="{Date}2026-05-04T09:34:39.057+02:00"
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="itv/components/seccionador"
@@ -102,42 +71,137 @@
                         <panel-0
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="wcm/foundation/components/responsivegrid">
-                            <cardlistinteractiva
-                                jcr:created="{Date}2026-05-03T23:52:39.707+02:00"
+                            <cardlistinteractiva_
+                                jcr:created="{Date}2026-05-04T00:39:16.405+02:00"
                                 jcr:createdBy="admin"
-                                jcr:lastModified="{Date}2026-05-03T23:54:34.298+02:00"
+                                jcr:lastModified="{Date}2026-05-04T12:33:10.762+02:00"
                                 jcr:lastModifiedBy="admin"
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="itv/components/cardlistInteractiva"
-                                mediaType="image">
+                                mediaType="3d">
                                 <cards jcr:primaryType="nt:unstructured">
                                     <item0
                                         jcr:primaryType="nt:unstructured"
                                         imagePath="/content/dam/itv/buycar/images/car-cardlist.png"
+                                        modelPath="/content/dam/itv/buycar/3d-models/mercedes-benz_slr_mclaren_2005.glb"
                                         title="Mercedes gla"/>
                                     <item1
                                         jcr:primaryType="nt:unstructured"
                                         imagePath="/content/dam/itv/buycar/images/car-cardlist.png"
+                                        modelPath="/content/dam/itv/buycar/3d-models/mercedes-benz_slr_mclaren_2005.glb"
                                         title="Mercedes gla"/>
                                     <item2
                                         jcr:primaryType="nt:unstructured"
                                         imagePath="/content/dam/itv/buycar/images/car-cardlist.png"
+                                        modelPath="/content/dam/itv/buycar/3d-models/mercedes-benz_slr_mclaren_2005.glb"
                                         title="Mercedes gla"/>
                                     <item3
                                         jcr:primaryType="nt:unstructured"
                                         imagePath="/content/dam/itv/buycar/images/car-cardlist.png"
+                                        modelPath="/content/dam/itv/buycar/3d-models/mercedes-benz_slr_mclaren_2005.glb"
                                         title="Mercedes gla"/>
                                     <item4
                                         jcr:primaryType="nt:unstructured"
                                         imagePath="/content/dam/itv/buycar/images/car-cardlist.png"
+                                        modelPath="/content/dam/itv/buycar/3d-models/mercedes-benz_slr_mclaren_2005.glb"
                                         title="Mercedes gla"/>
                                     <item5
                                         jcr:primaryType="nt:unstructured"
                                         imagePath="/content/dam/itv/buycar/images/car-cardlist.png"
+                                        modelPath="/content/dam/itv/buycar/3d-models/mercedes-benz_slr_mclaren_2005.glb"
                                         title="Mercedes gla"/>
                                 </cards>
-                            </cardlistinteractiva>
+                            </cardlistinteractiva_>
                         </panel-0>
+                        <cardlistinteractiva_
+                            jcr:created="{Date}2026-05-04T00:39:16.405+02:00"
+                            jcr:createdBy="admin"
+                            jcr:lastModified="{Date}2026-05-04T01:16:11.426+02:00"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="itv/components/cardlistInteractiva"
+                            mediaType="3d">
+                            <cards jcr:primaryType="nt:unstructured">
+                                <item0
+                                    jcr:primaryType="nt:unstructured"
+                                    imagePath="/content/dam/itv/buycar/images/car-cardlist.png"
+                                    modelPath="/content/dam/itv/buycar/3d-models/mercedes-benz_slr_mclaren_2005.glb"
+                                    title="Mercedes gla"/>
+                                <item1
+                                    jcr:primaryType="nt:unstructured"
+                                    imagePath="/content/dam/itv/buycar/images/car-cardlist.png"
+                                    modelPath="/content/dam/itv/buycar/3d-models/mercedes-benz_slr_mclaren_2005.glb"
+                                    title="Mercedes gla"/>
+                                <item2
+                                    jcr:primaryType="nt:unstructured"
+                                    imagePath="/content/dam/itv/buycar/images/car-cardlist.png"
+                                    modelPath="/content/dam/itv/buycar/3d-models/mercedes-benz_slr_mclaren_2005.glb"
+                                    title="Mercedes gla"/>
+                                <item3
+                                    jcr:primaryType="nt:unstructured"
+                                    imagePath="/content/dam/itv/buycar/images/car-cardlist.png"
+                                    modelPath="/content/dam/itv/buycar/3d-models/mercedes-benz_slr_mclaren_2005.glb"
+                                    title="Mercedes gla"/>
+                                <item4
+                                    jcr:primaryType="nt:unstructured"
+                                    imagePath="/content/dam/itv/buycar/images/car-cardlist.png"
+                                    modelPath="/content/dam/itv/buycar/3d-models/mercedes-benz_slr_mclaren_2005.glb"
+                                    title="Mercedes gla"/>
+                                <item5
+                                    jcr:primaryType="nt:unstructured"
+                                    imagePath="/content/dam/itv/buycar/images/car-cardlist.png"
+                                    modelPath="/content/dam/itv/buycar/3d-models/mercedes-benz_slr_mclaren_2005.glb"
+                                    title="Mercedes gla"/>
+                            </cards>
+                        </cardlistinteractiva_>
+                        <panel-2
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="wcm/foundation/components/responsivegrid"/>
+                        <panel-1
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="wcm/foundation/components/responsivegrid">
+                            <cardlistinteractiva_
+                                jcr:created="{Date}2026-05-04T00:39:16.405+02:00"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2026-05-04T02:54:42.080+02:00"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="itv/components/cardlistInteractiva"
+                                mediaType="3d">
+                                <cards jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        imagePath="/content/dam/itv/buycar/images/car-cardlist.png"
+                                        modelPath="/content/dam/itv/buycar/3d-models/UrusM.glb"
+                                        title="Mercedes gla"/>
+                                    <item1
+                                        jcr:primaryType="nt:unstructured"
+                                        imagePath="/content/dam/itv/buycar/images/car-cardlist.png"
+                                        modelPath="/content/dam/itv/buycar/3d-models/UrusM.glb"
+                                        title="Mercedes gla"/>
+                                    <item2
+                                        jcr:primaryType="nt:unstructured"
+                                        imagePath="/content/dam/itv/buycar/images/car-cardlist.png"
+                                        modelPath="/content/dam/itv/buycar/3d-models/UrusM.glb"
+                                        title="Mercedes gla"/>
+                                    <item3
+                                        jcr:primaryType="nt:unstructured"
+                                        imagePath="/content/dam/itv/buycar/images/car-cardlist.png"
+                                        modelPath="/content/dam/itv/buycar/3d-models/UrusM.glb"
+                                        title="Mercedes gla"/>
+                                    <item4
+                                        jcr:primaryType="nt:unstructured"
+                                        imagePath="/content/dam/itv/buycar/images/car-cardlist.png"
+                                        modelPath="/content/dam/itv/buycar/3d-models/UrusM.glb"
+                                        title="Mercedes gla"/>
+                                    <item5
+                                        jcr:primaryType="nt:unstructured"
+                                        imagePath="/content/dam/itv/buycar/images/car-cardlist.png"
+                                        modelPath="/content/dam/itv/buycar/3d-models/UrusM.glb"
+                                        title="Mercedes gla"/>
+                                </cards>
+                            </cardlistinteractiva_>
+                        </panel-1>
                         <sections jcr:primaryType="nt:unstructured">
                             <item0
                                 jcr:primaryType="nt:unstructured"
@@ -147,9 +211,9 @@
                                 title="Híbridos"/>
                             <item2
                                 jcr:primaryType="nt:unstructured"
-                                title="Combustible"/>
+                                title="Combustibles"/>
                         </sections>
-                    </seccionador_1996167282>
+                    </seccionador>
                 </container>
                 <container_1022808279
                     jcr:created="{Date}2026-03-17T10:28:51.533+01:00"

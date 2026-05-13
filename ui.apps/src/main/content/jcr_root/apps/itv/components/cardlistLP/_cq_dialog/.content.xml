@@ -17,6 +17,13 @@
                         jcr:title="Cards"
                         sling:resourceType="granite/ui/components/coral/foundation/container">
                         <items jcr:primaryType="nt:unstructured">
+                            <enableAutoplay
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                name="./enableAutoplay"
+                                text="Activar pase automático de cards (Autoplay)"
+                                uncheckedValue="false"
+                                value="true"/>
                             <cards
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="granite/ui/components/coral/foundation/form/multifield"

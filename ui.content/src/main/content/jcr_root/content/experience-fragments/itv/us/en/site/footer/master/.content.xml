@@ -2,8 +2,8 @@
 <jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2026-05-03T21:33:14.739+02:00"
-        cq:lastModifiedBy="reference-adjustment-service"
+        cq:lastModified="{Date}2026-05-04T09:31:17.279+02:00"
+        cq:lastModifiedBy="admin"
         cq:tags="[]"
         cq:template="/conf/itv/settings/wcm/templates/xf-web-variation"
         cq:xfMasterVariation="{Boolean}true"
@@ -81,7 +81,7 @@
                     text="&lt;p>cs@buycar.co.id&lt;/p>&#xd;&#xa;"
                     textIsRich="true"/>
                 <sns
-                    jcr:lastModified="{Date}2026-03-26T20:30:21.977+01:00"
+                    jcr:lastModified="{Date}2026-05-04T09:31:17.151+02:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="itv/components/sns">
@@ -108,14 +108,23 @@
                             name="Facebook"/>
                     </snsList>
                 </sns>
+                <right-secondary-links
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wcm/foundation/components/responsivegrid">
+                    <list
+                        jcr:created="{Date}2026-05-04T02:28:11.315+02:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2026-05-04T02:29:31.141+02:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/list"
+                        displayAs="default"
+                        listFrom="children"
+                        pageMax="0"
+                        parentPage="/content/itv/us/en/landing-page/quienes-somos"
+                        tagsMatch="any"/>
+                </right-secondary-links>
             </footer>
-            <cookie_declaration
-                jcr:created="{Date}2026-04-08T13:15:41.374+02:00"
-                jcr:createdBy="admin"
-                jcr:lastModified="{Date}2026-04-08T13:15:41.374+02:00"
-                jcr:lastModifiedBy="admin"
-                jcr:primaryType="nt:unstructured"
-                sling:resourceType="itv/components/cookie-declaration"/>
         </root>
     </jcr:content>
 </jcr:root>

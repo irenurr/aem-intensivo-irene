@@ -1,0 +1,13 @@
+<sly data-sly-use.model="com.itv.core.models.MapsModel"
+    data-sly-use.templates="core/wcm/components/commons/v1/templates.html"/>
+<sly data-sly-test.hasContent="${properties.address}"></sly>
+
+<div class="itv-maps" data-sly-test="${model.valid && hasContent}"
+    data-lat="${model.lat}" data-lng="${model.lng}" 
+    data-zoom="${model.zoom || '15'}">
+
+    <div id="map-${properties.id}" class="itv-googlemap__canvas" 
+        style="width: 100%; height: 400px; background-color: #eee;">
+    </div>
+</div>
+<sly data-sly-call="${templates.placeholder @ isEmpty = !model.valid}"></sly>

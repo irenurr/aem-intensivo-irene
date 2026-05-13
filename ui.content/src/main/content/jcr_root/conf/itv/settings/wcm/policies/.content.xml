@@ -242,12 +242,12 @@
                 <policy_header_container
                     cq:styleDefaultElement="header"
                     jcr:description="componentes permitidos en el contenedor principal del landing-page header."
-                    jcr:lastModified="{Date}2026-04-08T13:38:50.248+02:00"
+                    jcr:lastModified="{Date}2026-05-04T02:31:28.024+02:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Landing Page XF Container Policy"
                     sling:resourceType="wcm/core/components/policy/policy"
-                    components="[/apps/itv/components/footer]"
+                    components="[/libs/foundation/components/list]"
                     layout="responsiveGrid"
                     layoutDisabled="false">
                     <jcr:content jcr:primaryType="nt:unstructured"/>
@@ -363,12 +363,12 @@
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                 </policy_1773919912242>
                 <policy_1774556834800
-                    jcr:lastModified="{Date}2026-05-04T00:32:10.718+02:00"
+                    jcr:lastModified="{Date}2026-05-04T04:20:47.195+02:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     jcr:title="LP Content"
                     sling:resourceType="wcm/core/components/policy/policy"
-                    components="[/apps/itv/components/brands,/apps/itv/components/cardlistInteractiva,/apps/itv/components/cardlistLP,/apps/itv/components/cardlist-simple,/apps/itv/components/container,/apps/itv/components/hero,/apps/itv/components/image,/apps/itv/components/stat-counter,/apps/itv/components/teaser,/apps/itv/components/timeline,/apps/itv/components/title]"
+                    components="[/apps/itv/components/brands,/apps/itv/components/cardlistInteractiva,/apps/itv/components/cardlistLP,/apps/itv/components/cardlist-simple,/apps/itv/components/container,/apps/itv/components/hero,/apps/itv/components/image,/apps/itv/components/seccionador,/apps/itv/components/stat-counter,/apps/itv/components/teaser,/apps/itv/components/timeline,/apps/itv/components/title]"
                     layoutDisabled="false">
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                 </policy_1774556834800>
@@ -382,6 +382,16 @@
                     layoutDisabled="false">
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                 </policy_97708750537300>
+                <policy_106518575932900
+                    jcr:lastModified="{Date}2026-05-04T02:57:22.209+02:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Page Content"
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    components="/apps/itv/components/hero"
+                    layoutDisabled="false">
+                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                </policy_106518575932900>
             </container>
             <teaser jcr:primaryType="nt:unstructured">
                 <policy_1575031387650
@@ -431,7 +441,7 @@
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                 </policy_1773740566696>
                 <policy_1776216255226
-                    jcr:lastModified="{Date}2026-05-04T01:10:51.664+02:00"
+                    jcr:lastModified="{Date}2026-05-04T01:20:12.834+02:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Page Content"

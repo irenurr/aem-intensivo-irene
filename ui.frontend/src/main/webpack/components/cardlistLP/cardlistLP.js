@@ -9,14 +9,16 @@ const swipers = document.querySelectorAll('.js-cardlist-swiper');
 
 if (swipers.length > 0) {
     swipers.forEach((Element) => {
+        const isAutoplayEnabled = Element.getAttribute('data-autoplay') === 'true';
+        const autoplayConfig = isAutoplayEnabled ? {
+            delay: 5000,
+                disableOnInteraction: false,
+        } : false;
         new Swiper((Element), {
             modules: [Autoplay, Navigation],
 
             loop: true,
-            autoplay: {
-                delay: 5000,
-                disableOnInteraction: false,
-            },
+            autoplay: autoplayConfig,
 
             centeredSlides: false,
             slidesPerView: 'auto',

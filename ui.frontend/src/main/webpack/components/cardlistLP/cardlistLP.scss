@@ -110,8 +110,10 @@
             text-decoration: none;
             transition: opacity 0.3s ease;
             box-sizing: border-box;
+            
+            &:hover {   opacity: 0.8    ;}
         }
-        &:hover {   opacity: 0.8    ;}
+        
         &--buy {
             width: 40%;
             .cmp-button {

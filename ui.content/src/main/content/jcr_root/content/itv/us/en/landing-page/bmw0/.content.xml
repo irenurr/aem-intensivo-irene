@@ -2,70 +2,99 @@
 <jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2026-05-04T00:52:38.289+02:00"
+        cq:lastModified="{Date}2026-05-04T11:59:36.482+02:00"
         cq:lastModifiedBy="admin"
-        cq:template="/conf/itv/settings/wcm/templates/content-buycar"
+        cq:template="/conf/itv/settings/wcm/templates/landing-page"
         jcr:primaryType="cq:PageContent"
-        jcr:title="Mercedes"
+        jcr:title="BMW"
         sling:resourceType="itv/components/page">
         <root
             jcr:primaryType="nt:unstructured"
             sling:resourceType="itv/components/container"
             layout="responsiveGrid">
             <container
-                jcr:primaryType="nt:unstructured"
-                sling:resourceType="itv/components/container"
-                layout="responsiveGrid"/>
-            <container_1465563213
-                jcr:created="{Date}2026-05-04T00:23:06.533+02:00"
-                jcr:createdBy="admin"
-                jcr:lastModified="{Date}2026-05-04T00:23:43.629+02:00"
+                jcr:lastModified="{Date}2026-05-04T03:02:56.859+02:00"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="itv/components/container"
-                id="cmp-container-main"
+                id="lp-main-container"
                 layout="responsiveGrid">
                 <container
-                    jcr:created="{Date}2026-05-04T00:23:27.118+02:00"
+                    jcr:created="{Date}2026-03-17T10:23:10.644+01:00"
                     jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2026-05-04T00:23:53.000+02:00"
+                    jcr:lastModified="{Date}2026-05-04T03:02:46.524+02:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="itv/components/container"
+                    id="lp-hero-container"
                     layout="responsiveGrid">
-                    <title
-                        jcr:created="{Date}2026-05-04T00:26:48.838+02:00"
+                    <hero
+                        jcr:created="{Date}2026-05-04T03:02:25.165+02:00"
                         jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2026-05-04T00:26:48.838+02:00"
+                        jcr:lastModified="{Date}2026-05-04T11:59:36.475+02:00"
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
-                        sling:resourceType="itv/components/title"/>
+                        sling:resourceType="itv/components/hero"
+                        bgImage="/content/dam/itv/buycar/images/modern-empty-room.jpg"
+                        bgMedia="image"
+                        bgVideo="/content/dam/itv/buycar/videos/BMW X1 – Elige lo que te mueve_720p.mp4"
+                        description="Aenean commodo ligula eget dolor.  Aenean massa. "
+                        fgImage="/content/dam/itv/buycar/images/car.png"
+                        fgMedia="3d"
+                        fgVideo="/content/dam/itv/buycar/videos/BMW X1 – Elige lo que te mueve_720p.mp4"
+                        model3d="/content/dam/itv/buycar/3d-models/UrusM.glb"
+                        title="Lorem ipsum dolor sit amet, consectetuer adipiscing elit.">
+                        <btn-buy
+                            jcr:lastModified="{Date}2026-05-04T03:07:19.682+02:00"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Compra"
+                            sling:resourceType="core/wcm/components/button/v2/button"
+                            linkTarget="_self"/>
+                        <btn-try
+                            jcr:lastModified="{Date}2026-05-04T03:07:29.639+02:00"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Pruebalo"
+                            sling:resourceType="core/wcm/components/button/v2/button"
+                            linkTarget="_self"/>
+                    </hero>
+                </container>
+                <container_1022808279
+                    jcr:created="{Date}2026-03-17T10:28:51.533+01:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2026-05-04T03:02:51.822+02:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="itv/components/container"
+                    id="lp-content-container"
+                    layout="responsiveGrid">
                     <seccionador
-                        jcr:created="{Date}2026-05-04T00:37:16.533+02:00"
+                        jcr:created="{Date}2026-05-04T03:03:57.020+02:00"
                         jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2026-05-04T00:37:51.085+02:00"
+                        jcr:lastModified="{Date}2026-05-04T03:04:21.864+02:00"
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="itv/components/seccionador"
-                        layoutMode="tabs">
+                        layoutMode="accordion">
                         <sections jcr:primaryType="nt:unstructured">
                             <item0
                                 jcr:primaryType="nt:unstructured"
-                                title="Eléctricos"/>
+                                title="Combustibles"/>
                             <item1
                                 jcr:primaryType="nt:unstructured"
                                 title="Híbridos"/>
                             <item2
                                 jcr:primaryType="nt:unstructured"
-                                title="Combustibles"/>
+                                title="Eléctricos"/>
                         </sections>
                         <panel-0
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="wcm/foundation/components/responsivegrid">
-                            <cardlistinteractiva
-                                jcr:created="{Date}2026-05-04T00:39:16.405+02:00"
+                            <cardlistinteractiva_
+                                jcr:created="{Date}2026-05-04T00:56:42.181+02:00"
                                 jcr:createdBy="admin"
-                                jcr:lastModified="{Date}2026-05-04T00:40:31.864+02:00"
+                                jcr:lastModified="{Date}2026-05-04T01:00:11.842+02:00"
                                 jcr:lastModifiedBy="admin"
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="itv/components/cardlistInteractiva"
@@ -74,76 +103,37 @@
                                     <item0
                                         jcr:primaryType="nt:unstructured"
                                         imagePath="/content/dam/itv/buycar/images/car-cardlist.png"
-                                        title="Mercedes gla"/>
+                                        title="BWM G Series"/>
                                     <item1
                                         jcr:primaryType="nt:unstructured"
                                         imagePath="/content/dam/itv/buycar/images/car-cardlist.png"
-                                        title="Mercedes gla"/>
+                                        title="BWM G Series"/>
                                     <item2
                                         jcr:primaryType="nt:unstructured"
                                         imagePath="/content/dam/itv/buycar/images/car-cardlist.png"
-                                        title="Mercedes gla"/>
+                                        title="BWM G Series"/>
                                     <item3
                                         jcr:primaryType="nt:unstructured"
                                         imagePath="/content/dam/itv/buycar/images/car-cardlist.png"
-                                        title="Mercedes gla"/>
+                                        title="BWM H Series"/>
                                     <item4
                                         jcr:primaryType="nt:unstructured"
                                         imagePath="/content/dam/itv/buycar/images/car-cardlist.png"
-                                        title="Mercedes gla"/>
+                                        title="BWM G Series"/>
                                     <item5
                                         jcr:primaryType="nt:unstructured"
                                         imagePath="/content/dam/itv/buycar/images/car-cardlist.png"
-                                        title="Mercedes gla"/>
+                                        title="BWM G Series"/>
                                 </cards>
-                            </cardlistinteractiva>
+                            </cardlistinteractiva_>
                         </panel-0>
-                        <panel-1
-                            jcr:primaryType="nt:unstructured"
-                            sling:resourceType="wcm/foundation/components/responsivegrid">
-                            <cardlistinteractiva
-                                jcr:created="{Date}2026-05-04T00:49:40.239+02:00"
-                                jcr:createdBy="admin"
-                                jcr:lastModified="{Date}2026-05-04T00:50:47.782+02:00"
-                                jcr:lastModifiedBy="admin"
-                                jcr:primaryType="nt:unstructured"
-                                sling:resourceType="itv/components/cardlistInteractiva"
-                                mediaType="image">
-                                <cards jcr:primaryType="nt:unstructured">
-                                    <item0
-                                        jcr:primaryType="nt:unstructured"
-                                        imagePath="/content/dam/itv/buycar/images/car-cardlist.png"
-                                        title="Mercedes gla"/>
-                                    <item1
-                                        jcr:primaryType="nt:unstructured"
-                                        imagePath="/content/dam/itv/buycar/images/car-cardlist.png"
-                                        title="Mercedes gla"/>
-                                    <item2
-                                        jcr:primaryType="nt:unstructured"
-                                        imagePath="/content/dam/itv/buycar/images/car-cardlist.png"
-                                        title="Mercedes gla"/>
-                                    <item3
-                                        jcr:primaryType="nt:unstructured"
-                                        imagePath="/content/dam/itv/buycar/images/car-cardlist.png"
-                                        title="Mercedes gla"/>
-                                    <item4
-                                        jcr:primaryType="nt:unstructured"
-                                        imagePath="/content/dam/itv/buycar/images/car-cardlist.png"
-                                        title="Mercedes gla"/>
-                                    <item5
-                                        jcr:primaryType="nt:unstructured"
-                                        imagePath="/content/dam/itv/buycar/images/car-cardlist.png"
-                                        title="Mercedes gla"/>
-                                </cards>
-                            </cardlistinteractiva>
-                        </panel-1>
                         <panel-2
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="wcm/foundation/components/responsivegrid">
-                            <cardlistinteractiva
-                                jcr:created="{Date}2026-05-04T00:50:55.109+02:00"
+                            <cardlistinteractiva_
+                                jcr:created="{Date}2026-05-04T00:56:38.580+02:00"
                                 jcr:createdBy="admin"
-                                jcr:lastModified="{Date}2026-05-04T00:51:45.094+02:00"
+                                jcr:lastModified="{Date}2026-05-04T00:58:28.147+02:00"
                                 jcr:lastModifiedBy="admin"
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="itv/components/cardlistInteractiva"
@@ -152,25 +142,72 @@
                                     <item0
                                         jcr:primaryType="nt:unstructured"
                                         imagePath="/content/dam/itv/buycar/images/car-cardlist.png"
-                                        title="Mercedes gla"/>
+                                        title="BMW E Series"/>
                                     <item1
                                         jcr:primaryType="nt:unstructured"
                                         imagePath="/content/dam/itv/buycar/images/car-cardlist.png"
-                                        title="Mercedes gla"/>
+                                        title="BMW E Series"/>
                                     <item2
                                         jcr:primaryType="nt:unstructured"
                                         imagePath="/content/dam/itv/buycar/images/car-cardlist.png"
-                                        title="Mercedes gla"/>
+                                        title="BMW E Series"/>
                                     <item3
                                         jcr:primaryType="nt:unstructured"
                                         imagePath="/content/dam/itv/buycar/images/car-cardlist.png"
-                                        title="Mercedes gla"/>
+                                        title="BMW E Series"/>
+                                    <item4
+                                        jcr:primaryType="nt:unstructured"
+                                        imagePath="/content/dam/itv/buycar/images/car-cardlist.png"
+                                        title="BMW E Series"/>
+                                    <item5
+                                        jcr:primaryType="nt:unstructured"
+                                        imagePath="/content/dam/itv/buycar/images/car-cardlist.png"
+                                        title="BMW E Series"/>
                                 </cards>
-                            </cardlistinteractiva>
+                            </cardlistinteractiva_>
                         </panel-2>
+                        <panel-1
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="wcm/foundation/components/responsivegrid">
+                            <cardlistinteractiva_
+                                jcr:created="{Date}2026-05-04T00:56:42.181+02:00"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2026-05-04T00:59:31.662+02:00"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="itv/components/cardlistInteractiva"
+                                mediaType="image">
+                                <cards jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        jcr:primaryType="nt:unstructured"
+                                        imagePath="/content/dam/itv/buycar/images/car-cardlist.png"
+                                        title="BWM H Series"/>
+                                    <item1
+                                        jcr:primaryType="nt:unstructured"
+                                        imagePath="/content/dam/itv/buycar/images/car-cardlist.png"
+                                        title="BWM H Series"/>
+                                    <item2
+                                        jcr:primaryType="nt:unstructured"
+                                        imagePath="/content/dam/itv/buycar/images/car-cardlist.png"
+                                        title="BWM H Series"/>
+                                    <item3
+                                        jcr:primaryType="nt:unstructured"
+                                        imagePath="/content/dam/itv/buycar/images/car-cardlist.png"
+                                        title="BWM H Series"/>
+                                    <item4
+                                        jcr:primaryType="nt:unstructured"
+                                        imagePath="/content/dam/itv/buycar/images/car-cardlist.png"
+                                        title="BWM H Series"/>
+                                    <item5
+                                        jcr:primaryType="nt:unstructured"
+                                        imagePath="/content/dam/itv/buycar/images/car-cardlist.png"
+                                        title="BWM H Series"/>
+                                </cards>
+                            </cardlistinteractiva_>
+                        </panel-1>
                     </seccionador>
-                </container>
-            </container_1465563213>
+                </container_1022808279>
+            </container>
         </root>
     </jcr:content>
 </jcr:root>
